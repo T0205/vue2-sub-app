@@ -6,20 +6,20 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/sub-home',
+    path: '/home',
     name: 'home',
     component: HomeView
   },
   {
-    path: '/sub-about',
+    path: '/about',
     name: 'about',
-    component: () => import( '../views/AboutView.vue')
+    component: () => import('../views/AboutView.vue')
   }
 ]
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: process.env.BASE_URL,  // process.env.BASE_URL = /
   routes
 })
 

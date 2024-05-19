@@ -1,12 +1,15 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/sub-home">sub-home</router-link> |
-      <router-link to="/sub-about">sub-about</router-link> |
+      <router-link to="/home">home</router-link> |
+      <router-link to="/about">about</router-link>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+<script>
+console.log('process.env.BASE_URL==>', process.env.BASE_URL)
+</script>
 
 <style>
 #app {
